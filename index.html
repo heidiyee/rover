@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <h1 class="offscreen">Rover submission</h1>
+		
+		<div class="body">
+		
+			<div class="step">
+				<p>Enter height and width of Mar's plateau.</p>
+		        <input type="text" id="setup" placeholder="Example: 4 4">
+				<button id="set-grid">Submit</button>
+			</div>
+				
+			<div class="step">
+				<p>Enter first rover coordinates.</p>
+				<input type="text" id="rover-one-input" placeholder="Example: 3 1 S">
+				<button id="rover-one-submit">Submit</button>
+			</div>
+
+			<div class="step">
+				<p>Enter first rover move sequence.</p>
+				<input type="text" id="rover-one-move" placeholder="Example: LMLMLMLMM">
+				<button id="rover-one-move-submit">Submit</button>
+			</div>
+
+			<div class="step">
+				<p>Enter second rover coordinates.</p>
+				<input type="text" id="rover-two-input" placeholder="Example: 3 20 E">
+				<button id="rover-two-submit">Submit</button>
+			</div>
+
+			<div class="step">
+				<p>Enter second rover move sequence.</p>
+				<input type="text" id="rover-two-move" placeholder="Example: LMLMLMLMM">
+				<button id="rover-two-move-submit">Submit</button>
+			</div>
+
+    	</div>
+
+
+        <!-- js files -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="rover.js"></script>
+		<script src="clickEvents.js"></script>
+    </body>
+</html>
